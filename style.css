@@ -8,7 +8,6 @@
 /*-------------------------------- navbar container--------------------------------- */
 .navbar-container {
   z-index: 1;
-
   width: 100%;
   height: 14vh;
   background-color: white;
@@ -37,7 +36,7 @@
 
 .navbar-left div img {
   width: 8rem;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .navbar-list-items ul {
@@ -54,7 +53,7 @@
 
 .navbar-right {
   display: flex;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   /* width: 10rem; */
 }
 
@@ -162,6 +161,7 @@
   /* border: 1px solid green; */
   width: 80%;
 }
+
 /* --------------------courses container------------------- */
 
 .courses-container {
@@ -371,7 +371,7 @@
 }
 
 .learn-left {
-  /* border: 1px solid red; */
+  /* border: 11px solid red; */
   width: 50%;
   height: 94vh;
   display: flex;
@@ -520,4 +520,175 @@
 .footer-right img {
   margin-bottom: 20px;
   width: 190px;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar-container {
+    z-index: 1;
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+    padding: 0 1rem 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow:
+      rgba(0, 0, 0, 0.19) 0px 10px 20px,
+      rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }
+  .navbar-list-items ul {
+    display: none;
+  }
+
+  .courses-container {
+    margin-top: 1rem;
+    border: 1px solid green;
+  }
+  .left-img {
+    display: flex;
+  }
+  .left-img img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 10px;
+  }
+  .container {
+    height: 120vh;
+  }
+
+  .courses-child-container {
+    /* border: 1px solid red; */
+    /* background-color: wheat; */
+    height: 400%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cards-container {
+    border: 2px solid red;
+    display: flex;
+    justify-content: start;
+    /* align-items: center; */
+    flex-direction: column;
+    overflow: auto;
+  }
+
+  .card {
+    width: 60%;
+    height: 80%;
+    cursor: pointer;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px 10px 10px 10px;
+  }
+
+  .card:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: scale(1);
+  }
+  .d-learn {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 0rem 0rem 0rem;
+    height: auto;
+    width: 100%;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    background-color: #010c50;
+  }
+
+  .learn-left {
+    /* border: 3px d red; */
+    width: 100%;
+    height: 94vh;
+    display: flex;
+    justify-content: start;
+  }
+  .learn-left img {
+    width: 56vh;
+  }
+  .learn-right {
+    /* border: 1px solid green; */
+    width: 100%;
+    height: 94vh;
+    display: flex;
+    justify-self: start;
+    flex-direction: column;
+    color: #fff;
+    background-color: #010c50;
+    justify-items: center;
+    padding: 3rem 1rem;
+    row-gap: 1rem;
+    font-family: "IBM Plex Sans", sans-serif;
+  }
+
+  .educator-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 170%;
+  }
+
+  .left {
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+  }
+  #start-now-btn {
+    margin: 01rem 0rem;
+  }
+  .right {
+    position: relative;
+    width: 100%;
+    display: flex;
+    /* justify-content: end; */
+  }
+
+  /* footer starts-------------------- */
+
+  .footer {
+    width: 100%;
+    height: 60%;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0px 1rem;
+  }
+  .footer-left {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 3rem;
+  }
+
+  .footer-left div img {
+    width: 140px;
+  }
+  .footer-right {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+  }
+  .footer-right img {
+    width: 10rem;
+  }
+  /* .footer-right p {
+    border: 1px solid red;
+    display: block;
+    width: 100%;
+  } */
 }
